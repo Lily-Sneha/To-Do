@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ToDo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <div id="ToDo">To-Do</div>
+    <div class="container">
+        <div id="items">
+            <div id="addtask">Add Tasks</div>
+            <input type="text" id="inputscreen" oninput="input()" placeholder="Enter">
+            <button id="add" onclick="add()">Add</button>
+            <button id="backspace" onclick="back()">Back</button>
+        </div>
+
+        <div id="Tasks">
+            <b>To-Do</b>
+        </div>
+
+        <div class="task" id="adtask"></div>
+        <i class="fa-solid fa-trash-can" style="font-size:15px" id="icon1"></i>
+
+        <div id="completed">
+            <b>Completed</b>
+            <select id="btn">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+    </div>
+</body>
+<script src="ToDo.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</html>
